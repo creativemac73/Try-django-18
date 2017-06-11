@@ -26,8 +26,18 @@ SECRET_KEY = 'q6m4w0mlh2rw!caaq*n0+yvn$^d=d!c!)0!%y^9o5m8eq@)t!g'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'youremail@gmail.com'
+EMAIL_HOST_PASSWORD = 'yourpassword'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
-
+'''
+If using gmail, you will need to
+unlock Captcha to enable django
+to send for you :
+https://accounts.google.com/displayunlockcaptcha
+'''
 # Application definition
 
 INSTALLED_APPS = (
