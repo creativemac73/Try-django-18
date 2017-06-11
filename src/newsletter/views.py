@@ -47,10 +47,10 @@ def contact(request):
         subject = 'Site contact form'
         from_email = settings.EMAIL_HOST_USER
         to_email = [from_email, 'yourotheremail@gmail.com']
-        contact_message = "%s: %s via %s%(
-                form_full_name,
-                form_message,
-                form_email)
+        contact_message = "%s: %s via %s"%(
+ 				form_full_name,
+ 				form_message,
+ 				form_email)
         some_html_message = """
  		<h1>hello</h1>
  		"""
